@@ -171,27 +171,3 @@ def sphere_volume(radius):
 
 if __name__ == '__main__':
     print("volume of the sphere:", sphere_volume(1))
-
-
-def triangle_area(a, b, c):
-    """
-    calculates the area of a triangle given the dimensions of its three sides.
-    @param a:one of the sides of triangle
-    @param b:second side of triangle
-    @param c: third side of triangle
-    @return:area of triangle(in square units)
-
-    >>>triangle_area(4,3,3)
-    (20)**0.5
-    """
-
-    if a+b > c & a+c > b & b+c > a:
-        s = (a+b+c)/2.
-        area = (s*(s-a)*(s-b)*(s-c))**0.5
-        return area
-    else:
-        return "Enter correct input"
-
-
-
-print("area of triangle:",triangle_area(45,12,23))
